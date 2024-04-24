@@ -26,10 +26,10 @@ function CoffeeCart({ coffee, coffees, setCoffees }) {
         })
           .then((res) => res.json())
           .then((data) => {
-            if (data.deleteCount > 0) {
+            if (data.deletedCount > 0) {
               Swal.fire({
                 title: "Deleted!",
-                text: "Your Coffee been deleted.",
+                text: "Your Coffee has been deleted.",
                 icon: "success",
               });
             }
